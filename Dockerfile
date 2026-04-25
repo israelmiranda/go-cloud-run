@@ -16,7 +16,6 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 
 COPY --from=builder /app/weather-app .
-COPY --from=builder /app/.env .
 
 EXPOSE 8080
 

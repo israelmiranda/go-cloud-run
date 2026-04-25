@@ -4,9 +4,11 @@ A Go application that receives a Brazilian postal code (CEP), identifies the cor
 
 ## 🔗 Cloud Run URL
 
-**URL**: `https://weather-by-cep-XXXXX-XXXXX.a.run.app`
+**URL**: https://weather-by-cep-179871945135.us-central1.run.app
 
-> Replace `XXXXX-XXXXX` with your actual Cloud Run service URL.
+curl -X POST https://weather-by-cep-179871945135.us-central1.run.app/weather \
+  -H "Content-Type: application/json" \
+  -d '{"cep":"01310100"}'
 
 ---
 

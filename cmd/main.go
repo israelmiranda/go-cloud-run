@@ -18,10 +18,9 @@ import (
 )
 
 func main() {
-	if err := godotenv.Load(".env"); err != nil {
-		log.Fatal("Error trying to load env variables")
-		return
-	}
+	// Load .env file if it exists (local development)
+	// In Cloud Run, env vars are passed directly
+	_ = godotenv.Load(".env")
 
 	cfg := config.Load()
 
