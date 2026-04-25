@@ -74,7 +74,6 @@ make down
 
 ```json
 {
-  "city": "São Paulo",
   "temp_c": 25.5,
   "temp_f": 77.9,
   "temp_k": 298.65
